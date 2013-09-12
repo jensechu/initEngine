@@ -15,6 +15,16 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
+# Foundation for grid system
+gem 'zurb-foundation', '~> 4.3.1'
+
+# Compass 
+gem 'compass-rails', github: 'milgner/compass-rails', branch: 'rails4'
+
+#haml
+gem 'haml-rails'
+gem 'haml_assets'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
