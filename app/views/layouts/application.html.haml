@@ -5,5 +5,10 @@
     = stylesheet_link_tag "application"
 
   %body
-    %h1 init(together)
-    = yield
+    .row
+      .large-12.columns
+        .header
+          %h1 init(together)
+
+    .row
+      = yield

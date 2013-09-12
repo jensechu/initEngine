@@ -1,0 +1,33 @@
+@import "variables";
+
+@mixin initMasthead( $background-image ) {
+  background: url( $background-image );
+  padding: 25px;
+
+  .masthead-inner {
+    padding: 15px;
+    color: $white;
+    background: rgba( $black, 0.4 );
+  }
+
+  .masthead-title {
+    font-size: $large;
+    margin-bottom: 15px;
+  }
+
+  .masthead-subtext {
+    font-size: $regular;
+  }
+
+  .masthead-button {
+    @include initButton();
+  }
+}
+
+@mixin initButton( $bgcolor: $blue, $max-width:"none" ) {
+  @include border-radius( $radius );
+  text-align: center;
+  background-color: $bgcolor;
+  border-bottom: 5px solid shade( $bgcolor, 20 );
+  padding: 20px;
+}
